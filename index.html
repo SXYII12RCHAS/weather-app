@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/weather-app/assets/sun-D4ahzW2m.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script type="module" crossorigin src="/weather-app/assets/index-CIHfJo5N.js"></script>
+    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-BTW_ANE_.css">
+  </head>
+  <body class="blurred">
+
+  <nav>
+      <div class="logo">
+        <img src="/weather-app/assets/logo-DrfVCfaG.png" class ="logo" alt="logo" width="50" height="50">
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="theme">
+  </nav>
+
+  </div>
+    <div class="info-grid">
+      <div class="info-1">
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23121212'%20viewBox='0%200%20448%20512'%3e%3c!--!%20Font%20Awesome%20Pro%206.2.1%20by%20@fontawesome%20-%20https://fontawesome.com%20License%20-%20https://fontawesome.com/license%20(Commercial%20License)%20Copyright%202022%20Fonticons,%20Inc.%20--%3e%3cpath%20d='M224%200c17.7%200%2032%2014.3%2032%2032V62.1l15-15c9.4-9.4%2024.6-9.4%2033.9%200s9.4%2024.6%200%2033.9l-49%2049v70.3l61.4-35.8%2017.7-66.1c3.4-12.8%2016.6-20.4%2029.4-17s20.4%2016.6%2017%2029.4l-5.2%2019.3%2023.6-13.8c15.3-8.9%2034.9-3.7%2043.8%2011.5s3.7%2034.9-11.5%2043.8l-25.3%2014.8%2021.7%205.8c12.8%203.4%2020.4%2016.6%2017%2029.4s-16.6%2020.4-29.4%2017l-67.7-18.1L287.5%20256l60.9%2035.5%2067.7-18.1c12.8-3.4%2026%204.2%2029.4%2017s-4.2%2026-17%2029.4l-21.7%205.8%2025.3%2014.8c15.3%208.9%2020.4%2028.5%2011.5%2043.8s-28.5%2020.4-43.8%2011.5l-23.6-13.8%205.2%2019.3c3.4%2012.8-4.2%2026-17%2029.4s-26-4.2-29.4-17l-17.7-66.1L256%20311.7v70.3l49%2049c9.4%209.4%209.4%2024.6%200%2033.9s-24.6%209.4-33.9%200l-15-15V480c0%2017.7-14.3%2032-32%2032s-32-14.3-32-32V449.9l-15%2015c-9.4%209.4-24.6%209.4-33.9%200s-9.4-24.6%200-33.9l49-49V311.7l-61.4%2035.8-17.7%2066.1c-3.4%2012.8-16.6%2020.4-29.4%2017s-20.4-16.6-17-29.4l5.2-19.3L48.1%20395.6c-15.3%208.9-34.9%203.7-43.8-11.5s-3.7-34.9%2011.5-43.8l25.3-14.8-21.7-5.8c-12.8-3.4-20.4-16.6-17-29.4s16.6-20.4%2029.4-17l67.7%2018.1L160.5%20256%2099.6%20220.5%2031.9%20238.6c-12.8%203.4-26-4.2-29.4-17s4.2-26%2017-29.4l21.7-5.8L15.9%20171.6C.6%20162.7-4.5%20143.1%204.4%20127.9s28.5-20.4%2043.8-11.5l23.6%2013.8-5.2-19.3c-3.4-12.8%204.2-26%2017-29.4s26%204.2%2029.4%2017l17.7%2066.1L192%20200.3V129.9L143%2081c-9.4-9.4-9.4-24.6%200-33.9s24.6-9.4%2033.9%200l15%2015V32c0-17.7%2014.3-32%2032-32z'/%3e%3c/svg%3e" data-current-icon id="sun" width="200" height="200">
+        <div class="current-temp">
+          <span data-current-temp>90</span>&deg;
+        </div>
+      </div>
+      
+      <div class="info-2">
+        <div class="info-group">
+          <div class="label">High</div>
+          <span data-current-high>32</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">FL High</div>
+          <span data-current-fl-high>27</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">Wind</div>
+          <span data-current-wind>9</span>mph
+        </div>
+        <div class="info-group">
+          <div class="label">Low</div>
+          <span data-current-low>19</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">FL Low</div>
+          <span data-current-fl-low>12</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">Precip</div>
+          <span data-current-precip>0.1</span>in
+        </div>
+      </div>
+    </div>
+    <h1>NEXT DAYS</h1>
+    <section class="days-section" data-day-section>
+    </section>
+
+    
+
+    <h1>NEXT HOURS</h1>
+
+    <section class="hours-section" data-hour-section>
+      
+    </section>
+
+    <template id="day-card-template">
+      <div class="day-card">
+        <img data-icon width="140" height="140">
+        <div class="day-card-day" data-day></div>  
+        <div><span data-temp></span><span>&deg;</span></div>
+      </div>
+      </template>
+      
+      <template id="hour-row-template">
+        <div class="hour-row">
+          <div class="hour-info-group">
+            <div class="label" data-day></div>
+            <div data-time></div>
+          </div>
+          <div class="hour-info-group">
+            <img data-icon width="50" height="50">
+          </div>
+          <div class="hour-info-group">
+            <div class="label">TEMP</div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="hour-info-group">
+            <div class="label">FL TEMP</div>
+            <div><span data-fl-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="hour-info-group">
+            <div class="label">WIND</div>
+            <div><span data-wind></span>mph</div>
+          </div>
+          <div class="hour-info-group">
+              <div class="label">PRECIP</div>
+              <div><span data-precip></span>in</div>
+          </div>
+        </div>
+      </template>
+  </body>
+</html>
