@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sun.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body class="blurred">
+    <script type="module" src="/src/main.js"></script>
+
+  <nav>
+      <div class="logo">
+        <img src="/logo.png" class ="logo" alt="logo" width="50" height="50">
+      </div>
+      <!-- <div class="search">
+        <input type="search" placeholder="Search for a city" id="search">
+        <input type="button" value="Search" id="search-button">
+      </div> -->
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="theme">
+  </nav>
+
+  </div>
+    <div class="info-grid">
+      <div class="info-1">
+        <img src="/snowflake.svg" data-current-icon id="sun" width="200" height="200">
+        <div class="current-temp">
+          <span data-current-temp>90</span>&deg;
+        </div>
+      </div>
+      
+      <div class="info-2">
+        <div class="info-group">
+          <div class="label">High</div>
+          <span data-current-high>32</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">FL High</div>
+          <span data-current-fl-high>27</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">Wind</div>
+          <span data-current-wind>9</span>mph
+        </div>
+        <div class="info-group">
+          <div class="label">Low</div>
+          <span data-current-low>19</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">FL Low</div>
+          <span data-current-fl-low>12</span>&deg;
+        </div>
+        <div class="info-group">
+          <div class="label">Precip</div>
+          <span data-current-precip>0.1</span>in
+        </div>
+      </div>
+    </div>
+    <h1>NEXT DAYS</h1>
+    <section class="days-section" data-day-section>
+    </section>
+
+    
+
+    <h1>NEXT HOURS</h1>
+
+    <section class="hours-section" data-hour-section>
+      
+    </section>
+
+    <template id="day-card-template">
+      <div class="day-card">
+        <img data-icon width="140" height="140">
+        <div class="day-card-day" data-day></div>  
+        <div><span data-temp></span><span>&deg;</span></div>
+      </div>
+      </template>
+      
+      <template id="hour-row-template">
+        <div class="hour-row">
+          <div class="hour-info-group">
+            <div class="label" data-day></div>
+            <div data-time></div>
+          </div>
+          <div class="hour-info-group">
+            <img data-icon width="50" height="50">
+          </div>
+          <div class="hour-info-group">
+            <div class="label">TEMP</div>
+            <div><span data-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="hour-info-group">
+            <div class="label">FL TEMP</div>
+            <div><span data-fl-temp></span><span>&deg;</span></div>
+          </div>
+          <div class="hour-info-group">
+            <div class="label">WIND</div>
+            <div><span data-wind></span>mph</div>
+          </div>
+          <div class="hour-info-group">
+              <div class="label">PRECIP</div>
+              <div><span data-precip></span>in</div>
+          </div>
+        </div>
+      </template>
+  </body>
+</html>
